@@ -8,11 +8,11 @@ import { useState } from 'react';
 export default function Header() {
 
   // change nav style when scrolling
-  const [isScrolled,setIsScrolled] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
 
   const changeHeader = () => {
-    if( window.scrollY >= 10) {
+    if (window.scrollY >= 10) {
       setIsScrolled(true);
     }
     else {
@@ -20,14 +20,16 @@ export default function Header() {
     }
   }
 
-  window.addEventListener('scroll',changeHeader);
+  window.addEventListener('scroll', changeHeader);
 
   return (
     <header className={`header ${isScrolled ? "scrolled" : ""}`}>
       <div className="header-container container">
-        <div className="logo">
-          <Link to='/'><img src="./images/header/logo.png" alt="" /></Link>
-        </div>
+        <Link to='/'>
+          <div className="logo">
+            <img src="./images/header/logo.png" alt="" />
+          </div>
+        </Link>
         <nav className='navbar'>
           <Link to='/marketplace' className="nav-link">Marketplace</Link>
           <Link to='/swap' className="nav-link">Swap</Link>

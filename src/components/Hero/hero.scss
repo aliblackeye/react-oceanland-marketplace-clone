@@ -7,13 +7,13 @@
   background-image: url("../../../public/images/hero/background.png");
   margin-top: 10%;
   height: 90vh;
-  position: relative;
 
   &-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: fadeInUp 2s ease-in-out 0s 1 alternate;
 
     .heading,
     .sub-heading {
@@ -35,8 +35,19 @@
     }
   }
 
-  @keyframes updown {
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      padding-top: 20%;
+    }
 
+    to {
+      opacity: 1;
+      padding-top: 0;
+    }
+  }
+
+  @keyframes updown {
     to {
       top: 80%;
     }
@@ -76,8 +87,6 @@
     .arrow-down {
       width: 200px;
       position: relative;
-
-
 
       .left,
       .right {

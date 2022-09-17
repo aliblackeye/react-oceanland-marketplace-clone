@@ -7,12 +7,13 @@ import Footer from "./components/Footer/Footer.jsx";
 import "./app.scss";
 
 function App() {
+
   return (
     <Router>
       <Header />
       <Routes>
         <Route path="/" element={<HomeScreen />} />
-      </Routes>
+      </Routes> 
       <Footer />
     </Router>
   );
