@@ -1,0 +1,46 @@
+@import "../../variables.scss";
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  transition: all 0.8s ease;
+
+  &.scrolled {
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+    background-color: #d2e5ff;
+  }
+
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+
+    .logo {
+      width: 180px;
+    }
+
+    .navbar {
+      display: flex;
+      gap: 35px;
+
+      .nav-link {
+        color: $color-secondary;
+        font-weight: 500;
+        border-bottom: 1.5px solid transparent;
+        transition: all 0.5s ease;
+        &:hover {
+          border-color: $color-secondary;
+        }
+      }
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+    }
+  }
+}

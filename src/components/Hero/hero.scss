@@ -1,0 +1,109 @@
+@import "../../variables.scss";
+
+.hero {
+  background-position: center 72%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url("../../../public/images/hero/background.png");
+  margin-top: 10%;
+  height: 90vh;
+  position: relative;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .heading,
+    .sub-heading {
+      font-size: 72px;
+    }
+
+    .heading {
+      color: $color-primary;
+    }
+
+    .sub-heading {
+      color: $color-secondary;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      font-size: 22px;
+      color: #333;
+    }
+  }
+
+  @keyframes updown {
+
+    to {
+      top: 80%;
+    }
+  }
+
+  @keyframes shakeleft {
+    to {
+      transform: rotateZ(-30deg);
+      left: 41%;
+    }
+  }
+
+  @keyframes shakeright {
+    to {
+      transform: rotateZ(30deg);
+      left: 50%;
+    }
+  }
+
+  // animation-name: example;
+  // animation-duration: 4s;
+  // animation-delay: 2s;
+  // animation-iteration-count: infinite;
+  // animation-fill-mode: forwards;
+  // animation-timing-function: linear;
+  // animation-direction: reverse;
+  // animation-direction: alternate;
+  // animation-direction: alternate-reverse;
+
+  #scroll-down {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: updown 0.5s ease-in 0s infinite alternate;
+
+    .arrow-down {
+      width: 200px;
+      position: relative;
+
+
+
+      .left,
+      .right {
+        position: absolute;
+        background-color: $color-secondary;
+        width: 10px;
+        height: 40px;
+        border-radius: 15px;
+        transform: translateX(-50%);
+      }
+
+      .left {
+        transform: rotateZ(-45deg);
+        left: 40%;
+        animation: shakeleft 0.5s ease-in 0s infinite alternate;
+      }
+
+      .right {
+        transform: rotateZ(45deg);
+        left: 51%;
+        animation: shakeright 0.5s ease-in 0s infinite alternate;
+      }
+    }
+
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+}

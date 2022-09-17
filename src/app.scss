@@ -1,0 +1,122 @@
+@import "./variables.scss";
+
+@font-face {
+  font-family: "Gilroy";
+
+  src: local("Gilroy"), url("./fonts/Gilroy-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 500;
+  src: local("Gilroy"), url("./fonts/Gilroy-ExtraBold.otf") format("opentype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Gilroy;
+}
+
+body {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, #c3deff 100%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.color-primary {
+  color: $color-primary;
+}
+
+.container {
+  max-width: 1410px;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  border-radius: 30px;
+  padding: 12px 32px;
+  background: #111;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-primary {
+  background-color: $btn-primary;
+}
+
+.btn-secondary {
+  background-color: $btn-secondary;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 3px solid #0a316699;
+  color: $color-secondary;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $btn-secondary;
+    color: #fff;
+  }
+}
+
+.slider-btn {
+  padding: 0px;
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $btn-secondary;
+    color: #fff;
+  }
+}
+
+.swiper {
+  padding: 20px 0;
+}
+
+.swiper-slide {
+  width: auto !important;
+}
+
+.swiper-pagination {
+  bottom: 0 !important;
+}
