@@ -1,1 +1,38 @@
 @import "../../variables.scss";
+
+.footer {
+    background-color: #FFF;
+
+    &-container {
+        padding: 50px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .left {
+            .logo {
+                width: 180px;
+            }
+        }
+        .right {
+            display: flex;
+            gap: 10px;
+            .social-icon {
+                background-color: $color-secondary;
+                color: #fff;
+                padding: 6px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    background-color: $color-primary;
+
+
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,56 @@
+@import "../../variables.scss";
+
+.recently-sold {
+  padding: 150px 0;
+  &-container {
+    .background-image {
+      position: absolute;
+      left: -10%;
+      top: -35%;
+      z-index: -1;
+    }
+
+    .swiper-container {
+      background-color: $color-secondary;
+      display: flex;
+      flex-direction: column;
+      padding: 45px;
+      gap: 14px;
+      border-radius: 38px;
+      position: relative;
+
+      .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .title {
+          color: #fff;
+          font-size: 36px;
+        }
+
+        .slider-buttons {
+          .slider-btn {
+            &:hover {
+              background-color: $btn-primary;
+            }
+          }
+        }
+
+        .btn-outline {
+          border-color: #ffffff99;
+          color: #fff;
+
+          &:hover {
+            border-color: $btn-primary;
+            background-color: $btn-primary;
+          }
+        }
+      }
+
+      .bottom {
+        width: 1347px !important;
+      }
+    }
+  }
+}

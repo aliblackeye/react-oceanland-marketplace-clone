@@ -121,3 +121,9 @@ a {
 .swiper-pagination {
   bottom: 0 !important;
 }
+
+.slider-buttons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}

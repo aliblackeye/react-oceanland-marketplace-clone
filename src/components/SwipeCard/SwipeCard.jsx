@@ -3,7 +3,7 @@ import { IoWalletOutline } from 'react-icons/io5';
 
 import './swipecard.scss';
 
-export default function SwipeCard({ image, title, tag, creator,creatorImg, price, button }) {
+export default function SwipeCard({ image, title, tag, creator, creatorImg, price, button }) {
     return (
         <div className="swipe-card">
             <div className="card-image">

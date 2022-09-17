@@ -4,15 +4,7 @@ import SwipeCard from '../SwipeCard/SwipeCard';
 
 // Import Swiper React components, required modules and Swiper styles
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation, Autoplay, Mousewheel } from 'swiper';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/autoplay';
-import 'swiper/css/mousewheel';
-import 'swiper/css/effect-flip';
-import 'swiper/css/a11y';
-
+import { Pagination, Navigation, Autoplay } from 'swiper';
 
 import './newlistings.scss';
 import ValueItem from './ValueItem';
@@ -39,11 +31,11 @@ export default function NewListings() {
     return (
         <section className="new-listings" id='newlistings'>
             <section className="value-box">
-                <ValueItem title={"Oland"} text={"0.0124"} type={"USDT"}/>
-                <ValueItem title={"Water"} text={"0.5122"} type={"Oland"}/>
-                <ValueItem title={"Food"} text={"0.6065"} type={"Oland"}/>
-                <ValueItem title={"Wood"} text={"0.8162"} type={"Oland"}/>
-                <ValueItem title={"Metal"} text={"0.8150"} type={"Oland"}/>
+                <ValueItem title={"Oland"} text={"0.0124"} type={"USDT"} />
+                <ValueItem title={"Water"} text={"0.5122"} type={"Oland"} />
+                <ValueItem title={"Food"} text={"0.6065"} type={"Oland"} />
+                <ValueItem title={"Wood"} text={"0.8162"} type={"Oland"} />
+                <ValueItem title={"Metal"} text={"0.8150"} type={"Oland"} />
             </section>
             <div className="new-listings-container container">
                 <div className="left">
@@ -61,8 +53,7 @@ export default function NewListings() {
                     pagination={{ clickable: true }}
                     autoplay={{ delay: 1500, disableOnInteraction: false, pauseOnMouseEnter: true, }}
                     navigation={{ nextEl: '.newlistings-button-next', prevEl: '.newlistings-button-prev' }}
-                    className="right"
-                >
+                    className="right">
                     {newListings.map(c => (
                         <SwiperSlide key={c.id}  >
                             <SwipeCard image={c.image} title={c.title} tag={c.tag} creator={c.creator} creatorImg={c.creatorImg} price={c.price} button />
