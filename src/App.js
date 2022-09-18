@@ -10,6 +10,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import "./app.scss";
 
+import './responsive.scss';
+
 function App() {
 
   return (

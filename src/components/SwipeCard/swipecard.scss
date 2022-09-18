@@ -16,6 +16,9 @@
     margin-bottom: 20px;
     transition: all 0.3s ease;
     height: 290px;
+    img {
+      object-fit: contain;
+    }
   }
 
   .card-top {
@@ -27,6 +30,7 @@
     .card-title {
       font-size: 15px;
       color: $color-secondary;
+      height: 20px;
     }
 
     .card-tag {

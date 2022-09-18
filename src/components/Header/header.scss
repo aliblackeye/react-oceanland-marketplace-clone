@@ -38,6 +38,13 @@
       }
     }
 
+    .hamburger-menu {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
     .buttons {
       display: flex;
       gap: 10px;

@@ -22,7 +22,6 @@
 body {
   background: rgb(255, 255, 255);
   background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, #c3deff 100%);
-  overflow-x: hidden;
 }
 
 h1,
@@ -112,10 +111,11 @@ a {
 
 .swiper {
   padding: 20px 0;
+  width: 100% !important;
 }
 
-.swiper-slide {
-  width: auto !important;
+.swipe-card {
+  margin: auto !important;
 }
 
 .swiper-pagination {

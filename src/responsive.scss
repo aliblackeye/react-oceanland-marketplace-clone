@@ -1,0 +1,222 @@
+@media (max-width: 1412px) {
+  .new-listings-container {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .value-box {
+    .value-title {
+      font-size: 22px;
+    }
+    .value-text {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .header-container {
+    .navbar {
+      display: none;
+    }
+
+    .hamburger-menu {
+      display: flex;
+    }
+  }
+
+  .value-box {
+    width: 90% !important;
+    .value-title {
+      font-size: 20px;
+    }
+    .value-text {
+      font-size: 12px;
+    }
+  }
+
+  .new-listings-container,
+  .recently-sold-container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  @keyframes updown {
+    to {
+      top: 80%;
+    }
+  }
+
+  .hero {
+    margin-top: 30%;
+    .hero-container {
+      .heading,
+      .sub-heading {
+        font-size: 64px;
+      }
+      .description {
+        font-size: 18px;
+      }
+    }
+
+    #scroll-down {
+      top: 75%;
+    }
+  }
+
+  .new-listings-container {
+    .left {
+      .title {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .recently-sold {
+    .recently-sold-container {
+      .swiper-container {
+        .top {
+          .left {
+            .title {
+              font-size: 28px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 956px) {
+  .new-listings-container {
+    .left {
+      flex: 1;
+    }
+    .right {
+      flex: 2;
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .hero {
+    .hero-container {
+      .heading,
+      .sub-heading {
+        font-size: 54px;
+      }
+      .description {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .new-listings {
+    .value-box {
+      padding: 10px;
+      flex-direction: column;
+      justify-content: center;
+      .value-item {
+        padding: 20px 0;
+        border-right: 0;
+        border-bottom: 1px solid #fff;
+      }
+    }
+
+    .new-listings-container {
+      flex-direction: column;
+
+      .left {
+        margin-top: 30px;
+        .slider-buttons {
+          display: none;
+        }
+      }
+      .right {
+        flex: unset;
+      }
+    }
+  }
+
+  .recently-sold {
+    .recently-sold-container {
+        padding: 30px;
+      .top {
+        .slider-buttons {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    &-container {
+      .buttons {
+        button {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .hero {
+    margin-top: 40%;
+    .hero-container {
+      .heading,
+      .sub-heading {
+        font-size: 44px;
+      }
+      .description {
+        font-size: 16px;
+      }
+    }
+
+    #scroll-down {
+      top: 75%;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .hero {
+    margin-top: 50%;
+    .hero-container {
+      .heading,
+      .sub-heading {
+        font-size: 34px;
+      }
+      .description {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+    .hero {
+        .hero-container {
+          .heading,
+          .sub-heading {
+            font-size: 30px;
+          }
+          .description {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .recently-sold {
+        .recently-sold-container {
+            padding: 20px;
+          .top {
+            .slider-buttons {
+              display: none;
+            }
+          }
+        }
+      }
+}

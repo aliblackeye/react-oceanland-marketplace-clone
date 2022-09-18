@@ -35,30 +35,40 @@ export default function RecentlySold() {
 
                 <div className="swiper-container">
                     <div className="top">
-                        <h1 className="title"><span className="color-primary">Recently</span> Sold</h1>
-                        <div className="slider-buttons">
-                            <button className="btn slider-btn recently-sold-button-prev"><AiOutlineArrowLeft size={26} /></button>
-                            <button className="btn slider-btn recently-sold-button-next"><AiOutlineArrowRight size={26} /></button>
+                        <div className="left">
+                            <h1 className="title"><span className="color-primary">Recently</span> Sold</h1>
+                        </div>
+                        <div className="right">
+                            <div className="slider-buttons">
+                                <button className="btn slider-btn recently-sold-button-prev"><AiOutlineArrowLeft size={26} /></button>
+                                <button className="btn slider-btn recently-sold-button-next"><AiOutlineArrowRight size={26} /></button>
+                            </div>
                             <button className="btn btn-outline">Explore More</button>
                         </div>
-                    </div>
-                    <div className="bottom">
-                        <Swiper
-                            modules={[Navigation, Autoplay, Pagination]}
-                            slidesPerView={5}
-                            spaceBetween={24}
-                            autoplay={{ delay: 1500, disableOnInteraction: false, pauseOnMouseEnter: true, }}
-                            navigation={{ nextEl: '.recently-sold-button-next', prevEl: '.recently-sold-button-prev' }}
-                            className="recently-sold-swiper"
-                        >
-                            {newListings.map(c => (
-                                <SwiperSlide key={c.id}  >
-                                    <SwipeCard image={c.image} title={c.title} tag={c.tag} creator={c.creator} creatorImg={c.creatorImg} price={c.price} />
-                                </SwiperSlide>
-                            ))}
 
-                        </Swiper>
                     </div>
+                    <Swiper
+                        modules={[Navigation, Autoplay, Pagination]}
+                        autoplay={{ delay: 1500, disableOnInteraction: false, pauseOnMouseEnter: true, }}
+                        navigation={{ nextEl: '.recently-sold-button-next', prevEl: '.recently-sold-button-prev' }}
+                        className="bottom"
+                        breakpoints={
+                            {
+                                1300: { slidesPerView: 5, spaceBetween: 18 },
+                                1120: { slidesPerView: 4, spaceBetween: 12 },
+                                890: { slidesPerView: 3, spaceBetween: 12 },
+                                664: { slidesPerView: 2, spaceBetween: 12 },
+                                350: { slidesPerView: 1, spaceBetween: 12 }
+                            }
+                        }
+                    >
+                        {newListings.map(c => (
+                            <SwiperSlide key={c.id}  >
+                                <SwipeCard image={c.image} title={c.title} tag={c.tag} creator={c.creator} creatorImg={c.creatorImg} price={c.price} />
+                            </SwiperSlide>
+                        ))}
+
+                    </Swiper>
                     <div className="background-image">
                         <img src="./images/recentlysold/background.png" alt="" />
                     </div>

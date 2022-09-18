@@ -1,5 +1,7 @@
 import { FaMedium, FaTwitter, FaTelegram } from 'react-icons/fa'
 import { BsDiscord } from 'react-icons/bs'
+import { Link } from 'react-router-dom';
+
 import './footer.scss';
 
 export default function Footer() {
@@ -7,9 +9,11 @@ export default function Footer() {
     <footer className='footer'>
       <div className="footer-container container">
         <div className="left">
-          <div className="logo">
-            <img src="./images/header/logo.png" alt="" />
-          </div>
+          <Link to='/'>
+            <div className="logo">
+              <img src="./images/header/logo.png" alt="" />
+            </div>
+          </Link>
         </div>
         <div className="right">
           <a href='#' className='social-icon'><FaMedium size={20} /></a>

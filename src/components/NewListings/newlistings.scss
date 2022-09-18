@@ -9,7 +9,7 @@
     color: #fff;
     border-radius: 24px;
     padding: 60px 0;
-    width: 1200px;
+    width: 80%;
     margin: auto;
     .value-item {
       display: flex;
@@ -27,7 +27,7 @@
   &-container {
     display: flex;
     gap: 30px;
-    padding: 50px 0;
+    padding: 50px;
     .left {
       flex: 1;
       display: flex;
@@ -40,7 +40,6 @@
         font-size: 36px;
         color: #222;
       }
-
     }
 
     .right {

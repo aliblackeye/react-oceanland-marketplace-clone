@@ -3,6 +3,8 @@
 .recently-sold {
   padding: 150px 0;
   &-container {
+    padding: 50px;
+
     .background-image {
       position: absolute;
       left: -10%;
@@ -24,33 +26,38 @@
         align-items: center;
         justify-content: space-between;
 
-        .title {
-          color: #fff;
-          font-size: 36px;
+        .left {
+          .title {
+            color: #fff;
+            font-size: 36px;
+          }
         }
 
-        .slider-buttons {
-          .slider-btn {
+        .right {
+          display: flex;
+          gap: 20px;
+
+          .slider-buttons {
+            .slider-btn {
+              &:hover {
+                background-color: $btn-primary;
+              }
+            }
+          }
+
+          .btn-outline {
+            border-color: #ffffff99;
+            color: #fff;
+
             &:hover {
+              border-color: $btn-primary;
               background-color: $btn-primary;
             }
           }
         }
-
-        .btn-outline {
-          border-color: #ffffff99;
-          color: #fff;
-
-          &:hover {
-            border-color: $btn-primary;
-            background-color: $btn-primary;
-          }
-        }
       }
 
-      .bottom {
-        width: 1347px !important;
-      }
+
     }
   }
 }

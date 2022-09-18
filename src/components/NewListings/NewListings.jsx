@@ -48,11 +48,19 @@ export default function NewListings() {
                 </div>
                 <Swiper
                     modules={[Navigation, Autoplay, Pagination]}
-                    slidesPerView={4}
-                    spaceBetween={24}
+
                     pagination={{ clickable: true }}
                     autoplay={{ delay: 1500, disableOnInteraction: false, pauseOnMouseEnter: true, }}
                     navigation={{ nextEl: '.newlistings-button-next', prevEl: '.newlistings-button-prev' }}
+                    breakpoints={
+                        {
+                            1400: { slidesPerView: 4, spaceBetween: 24 },
+                            956: { slidesPerView: 3, spaceBetween: 12 },
+                            770: { slidesPerView: 2, spaceBetween: 12 },
+                            664: { slidesPerView: 2, spaceBetween: 0 },
+
+                        }
+                    }
                     className="right">
                     {newListings.map(c => (
                         <SwiperSlide key={c.id}  >
