@@ -41,7 +41,7 @@ export default function Header() {
         </Link>
         <nav className='navbar'>
           <Link to='/#' className="nav-link">Marketplace</Link>
-          <Link to='/#' className="nav-link">Swap</Link>
+          <Link to='/swap' className="nav-link">Swap</Link>
           <Link to='/#' className="nav-link">Stake</Link>
           <Link to='/#' className="nav-link">Pool</Link>
           <Link to='/#' className="nav-link">Farm</Link>
@@ -69,8 +69,8 @@ export default function Header() {
           <div className="logo">
             <img src="./images/header/logo.png" alt="" />
           </div>
-          <Link to='/#' className="nav-link">Marketplace</Link>
-          <Link to='/#' className="nav-link">Swap</Link>
+          <Link to='/' className="nav-link">Marketplace</Link>
+          <Link to='/swap' className="nav-link">Swap</Link>
           <Link to='/#' className="nav-link">Stake</Link>
           <Link to='/#' className="nav-link">Pool</Link>
           <Link to='/#' className="nav-link">Farm</Link>

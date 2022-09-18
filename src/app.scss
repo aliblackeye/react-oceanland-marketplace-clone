@@ -44,6 +44,12 @@ a {
   color: #333;
 }
 
+input {
+  border: 0;
+  background-color: transparent;
+  outline: 0;
+}
+
 .color-primary {
   color: $color-primary;
 }

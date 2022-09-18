@@ -200,6 +200,12 @@
       }
     }
   }
+
+  .footer{
+    &-container {
+      flex-direction: column;
+    }
+  }
 }
 
 @media (max-width: 400px) {
