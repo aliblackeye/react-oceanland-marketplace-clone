@@ -2,4 +2,4 @@
 
 ### A screenshot of the project
 
-![](https://github.com/aliblackeye/react-oceanland-clone/blob/master/video.mp4)
+![](https://github.com/aliblackeye/react-oceanland-clone/blob/master/screen.gif)
