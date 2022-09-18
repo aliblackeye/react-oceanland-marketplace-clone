@@ -21,8 +21,14 @@
       display: none;
     }
 
-    .hamburger-menu {
-      display: flex;
+    .buttons {
+      button {
+        display: none;
+      }
+    }
+
+    .hamburger-menu-btn {
+      display: flex !important;
     }
   }
 
@@ -142,7 +148,7 @@
 
   .recently-sold {
     .recently-sold-container {
-        padding: 30px;
+      padding: 30px;
       .top {
         .slider-buttons {
           display: none;
@@ -197,26 +203,26 @@
 }
 
 @media (max-width: 400px) {
-    .hero {
-        .hero-container {
-          .heading,
-          .sub-heading {
-            font-size: 30px;
-          }
-          .description {
-            font-size: 12px;
-          }
-        }
+  .hero {
+    .hero-container {
+      .heading,
+      .sub-heading {
+        font-size: 30px;
       }
+      .description {
+        font-size: 12px;
+      }
+    }
+  }
 
-      .recently-sold {
-        .recently-sold-container {
-            padding: 20px;
-          .top {
-            .slider-buttons {
-              display: none;
-            }
-          }
+  .recently-sold {
+    .recently-sold-container {
+      padding: 20px;
+      .top {
+        .slider-buttons {
+          display: none;
         }
       }
+    }
+  }
 }

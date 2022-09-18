@@ -63,6 +63,7 @@ a {
   background: #111;
   font-weight: 500;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .btn-with-icon {
@@ -83,12 +84,27 @@ a {
   background-color: transparent;
   border: 3px solid #0a316699;
   color: $color-secondary;
-  transition: all 0.3s ease;
+  
 
   &:hover {
     background-color: $btn-secondary;
     color: #fff;
   }
+}
+
+.btn-outline-light {
+  background-color: transparent;
+  border: 3px solid #fff;
+  &:hover {
+    background-color: $btn-primary;
+    border-color: transparent;
+  }
+}
+
+.btn-light {
+  background-color: #fff;
+  color: $color-primary;
+  border: 3px solid rgba(10, 49, 102, 0.6);
 }
 
 .slider-btn {
