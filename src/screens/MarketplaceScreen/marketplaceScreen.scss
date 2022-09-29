@@ -1,0 +1,58 @@
+.marketplace-screen {
+  padding: 135px 30px;
+  .marketplace-title {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .nft-counter {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .marketplace-wrapper {
+    display: flex;
+    .filters {
+      background-color: #fff;
+      border-radius: 10px;
+      flex: 2;
+        padding: 30px;
+      .filters-title {
+        font-size: 24px;
+        padding: 15px;
+      }
+
+      .accordion-items {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .filter-option {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    .marketplace {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      flex: 10;
+
+      .marketplace-sorting {
+        width: 200px;
+      }
+
+      &-items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+
+        justify-content: center;
+      }
+    }
+  }
+}
